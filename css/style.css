@@ -1,40 +1,60 @@
 /* style css */
 
+/* TODO: css optimalization, full statement on git, shrink on pictures and header */
+
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;      
+    justify-content: center;       
+    margin: 0 50vh 0;  
+    max-width: 80vh;    
     min-height: 100vh;  
-    margin: 0;
-  }
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.site {    
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
 
 /* HEADER */
 .header {    
     flex-direction: column;    
-    padding: 5px 100px 80px;
-    
+    padding: 5px 100px 0px;    
+    flex: 1;
 }
 
-.header-content {
-    width: 40em;
+.header-content {        
+    margin-top: 60px;    
 }
 
 .right-links {       
     list-style-type: none;
     padding: 0px;
     margin: 0px;      
-    gap: 8px;        
+    gap: 15px;        
 }
 
 .logo {
-    font-size: 24px;
-    width: 200px;
+    font-size: 24px;  
+    font-weight: 600;  
 }
 
 .header-img {
-    height: 10em;
-    width: 25em;
+    max-height: 15em;    
+    margin-left: 5px;
+}
+
+h1 {
+    padding-right: 50px;
+    margin-top: 0;
+}
+
+.header-button {
+    border: 0;
+    padding: 5px 20px 5px;
+    margin-top: 15px;
 }
 
 /* MULTIPLE CLASSES */
@@ -43,13 +63,12 @@ body {
     background-color: #1f2937;
 }
 
-.header-container {
+.header-container, .header-content {
     justify-content: space-between;
 }
 
-.header-container, .header-content, .section-one-warper, .right-links, .footer, .section-three, .header {
-    display: flex;    
-    
+.header-container, .header-content, .section-one-warper, .right-links, .footer, .section-three, .header, .site, .section-two, .section-one, .section-three-warper {
+    display: flex;       
 }
 
 a {    
@@ -60,7 +79,7 @@ h1 {
     font-size: 48px;
 }
 
-.logo, h1, .section-three-title, button {    
+.logo, h1, .section-three-title, button, .footer {    
     color: #f9faf8;
 }
 
@@ -74,27 +93,95 @@ a, .sub-text {
     font-size: 18px;
 }
 
+h3 {
+    font-size: 36px;
+}
+
+/* SECTION ONE */
+.section-one {
+    text-align: center;
+    flex-direction: column;    
+    flex: 1;     
+}
+
 .info {
-    width: 10em;    
+    max-width: 10em;
+}
+
+.section-one-warper {
+    gap: 30px;
 }
 
 .warper-img {
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
+    border: #3882f6 solid;
+    border-radius: 10px;
 }
 
-/* SECTOPN ONE */
-.section-one {
-    text-align: center;
+.text {      
+    text-align: left; 
+    padding: 5px 5px 0 15px;
 }
 
 /* SECTION TWO */
+.section-two {
+    background-color: #e5e7eb;
+    flex-direction: column;
+    justify-content: center;    
+    flex: 3; 
+}
+
+.section-two-warper {
+    margin: 0 250px 0;
+
+}
+
+.author {
+    text-align: right;
+    font-weight: 900;
+    padding-right: 25px;
+}
+
+.section-two-text {
+    font-size: 24px;
+}
 
 /* SECTION THREE */
+.section-three {
+    margin: 60px;
+}
 
+.section-three-container {
+    display: flex;
+    justify-content: center;     
+    flex-direction: column;    
+    margin: 40px;
+}
+
+.section-three-warper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.section-three-button {
+    margin: 50px 50px 50px;    
+    height: 30px;
+    padding: 0 25px 0;
+    border-color: #f9faf8;
+    font-weight: 900;
+}
+
+.section-three-title {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* FOOTER */
 
 .footer {    
     align-items: center;
     justify-content: center;    
-    height: 50px;           
+    height: 50px;                
 }
